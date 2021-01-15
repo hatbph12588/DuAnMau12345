@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".ThongKeDoanhThu">
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:src="@drawable/logo"
+       />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Hôm nay"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:id="@+id/tvThongKeNgay"
+        android:textColor="@color/design_default_color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tháng ngày"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:id="@+id/tvThongKeThang"
+        android:textColor="@color/design_default_color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Năm 2021"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:id="@+id/tvThongKeNam"
+        android:textColor="@color/design_default_color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

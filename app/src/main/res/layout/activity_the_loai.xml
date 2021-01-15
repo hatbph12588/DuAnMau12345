@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".TheLoaiActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        ></ImageView>
+    <EditText
+        android:id="@+id/edMaTheLoai"
+        android:hint="Mã thể loại"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edTenTheLoai"
+        android:hint="Tên thể loại"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edViTri"
+        android:hint="Vị Trí"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edMoTa"
+        android:hint="Mô Tả"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/btnAddTheLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="AddTheLoai"
+            android:text="Luu"
+            />
+        <Button
+            android:onClick="btnCannelTheLoai"
+            android:text="Hủy"
+            android:layout_weight="1"
+            android:id="@+id/btnCannelTheLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnShowTheLoai"
+        android:text="Show"
+        android:onClick="ShowTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

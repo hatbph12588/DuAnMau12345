@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    tools:context=".Sach">
+    <EditText
+        android:id="@+id/edMaSach"
+        android:hint="Mã sách"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/spnTheLoai"
+            android:paddingTop="15dp"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/button_plus_green"
+            />
+    </LinearLayout>
+    <EditText
+        android:hint="Tên sách"
+        android:id="@+id/edTenSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Tác giả"
+        android:id="@+id/edTacGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Nhà xuất bản"
+        android:id="@+id/edNXB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Giá Bìa"
+        android:id="@+id/edGiaBia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Số lượng"
+        android:id="@+id/edSoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/btnAddBook"
+            android:layout_weight="1"
+            android:text="Lưu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnCannelBook"
+            android:layout_weight="1"
+            android:text="Huỷ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:onClick="ShowBook"
+        android:text="Show"
+        android:id="@+id/btnShowBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

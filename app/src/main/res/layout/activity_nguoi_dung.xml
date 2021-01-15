@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NguoiDungActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="194dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên đăng nhập"
+            android:id="@+id/edUserName2"
+            ></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:id="@+id/edPassword2"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:id="@+id/edPhone"
+            android:layout_marginTop="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Họ và tên"
+            android:id="@+id/edFullName"
+            android:layout_marginTop="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="35dp"
+                android:id="@+id/addUser"
+                android:text="SAVE"
+                android:onClick="AddUser"
+                />
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_canel"
+                android:text="canel"
+                />
+
+            <Button
+                android:id="@+id/btnDsNguoidung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:text="Ds Nguoi dung"
+                android:onClick="loadDS"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

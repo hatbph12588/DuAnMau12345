@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".HoaDon">
+
+    <EditText
+        android:id="@+id/edMahoadon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ma hoa don" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DD-MM-YYYY"
+        android:id="@+id/edNgayMua"
+        android:layout_weight="4"
+        android:textSize="18dp"
+        />
+    <Button
+        android:id="@+id/picDate"
+        android:layout_weight="1"
+        android:text="Chon"
+        android:onClick="datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+    <Button
+        android:id="@+id/btnAddHoaDon"
+        android:text="Chon"
+        android:onClick="AddHoaDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
